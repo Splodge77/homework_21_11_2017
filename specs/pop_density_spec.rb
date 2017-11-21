@@ -66,9 +66,9 @@ class PopDensityTest < MiniTest::Test
    assert_equal(15, cubed_result)
  end
 
- #Given the radius of a sphere calculate the volume
  def test_volume_of_sphere()
-   #add test code here
+   vol_of_sphere_result = (4/3) * (Math::PI) * (7**3)
+   assert_equal(1077.5662801812991, vol_of_sphere_result)
  end
 
  #Given a value in farenheit, convert this into celsius.

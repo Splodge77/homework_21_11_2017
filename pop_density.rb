@@ -39,14 +39,18 @@ def number_to_full_month_name(int)
   end
 end
 
-def number_to_short_month_name(int)
+  def number_to_short_month_name(int)
   case int
-  when 1
-    return "Jan"
-  when 3
-    return "Mar"
-  when 9
-    return "Sep"
+    when 1
+      return "Jan"
+    when 3
+      return "Mar"
+    when 9
+      return "Sep"
   end
+
+def volume_of_cube(x)
+  return (x*y)
+end
 
 end

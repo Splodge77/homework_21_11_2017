@@ -61,11 +61,9 @@ class PopDensityTest < MiniTest::Test
 
 
 
- #Further
-
- #Given the length of a side of a cube calculate the volume
  def test_volume_of_cube()
-   #add test code here
+   cubed_result = (5*3)
+   assert_equal(15, cubed_result)
  end
 
  #Given the radius of a sphere calculate the volume
@@ -77,5 +75,5 @@ class PopDensityTest < MiniTest::Test
  def test_fahrenheit_to_celsius()
    #add test code here
  end
- 
+
 end

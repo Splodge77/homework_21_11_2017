@@ -62,18 +62,20 @@ class PopDensityTest < MiniTest::Test
 
 
  def test_volume_of_cube()
-   cubed_result = (5*3)
-   assert_equal(15, cubed_result)
+   cubed_result = volume_of_cube(5)
+   assert_equal(125, cubed_result)
  end
 
  def test_volume_of_sphere()
-   vol_of_sphere_result = (4/3) * (Math::PI) * (7**3)
+   # vol_of_sphere_result = (4/3) * (Math::PI) * (7**3)
+   vol_of_sphere_result = vol_of_sphere(7)
    assert_equal(1077.5662801812991, vol_of_sphere_result)
  end
 
  #Given a value in farenheit, convert this into celsius.
  def test_fahrenheit_to_celsius()
-   #add test code here
+   conversion_result = farenheit_to_celsius(68)
+   assert_equal(20, conversion_result)
  end
 
 end

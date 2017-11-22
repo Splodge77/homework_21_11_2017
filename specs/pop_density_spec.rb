@@ -1,3 +1,4 @@
+require ("minitest/rg")
 require("minitest/autorun")
 require_relative("../pop_density")
 
@@ -67,12 +68,10 @@ class PopDensityTest < MiniTest::Test
  end
 
  def test_volume_of_sphere()
-   # vol_of_sphere_result = (4/3) * (Math::PI) * (7**3)
    vol_of_sphere_result = vol_of_sphere(7)
-   assert_equal(1077.5662801812991, vol_of_sphere_result)
+   assert_in_delta(1077.56, vol_of_sphere_result, 0.01)
  end
 
- #Given a value in farenheit, convert this into celsius.
  def test_fahrenheit_to_celsius()
    conversion_result = farenheit_to_celsius(68)
    assert_equal(20, conversion_result)
